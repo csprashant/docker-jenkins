@@ -13,6 +13,13 @@ public class DockerExampleApplication {
 	public String test() {
 		return "docker isrunning";
 	}
+	
+	@GetMapping("/test/test2")
+	public String test2() {
+		return "docker isrunning";
+	}
+	
+	
 	public static void main(String[] args) {
 		SpringApplication.run(DockerExampleApplication.class, args);
 	}
